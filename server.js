@@ -1,5 +1,5 @@
 var app = require("./src/app");
 
-app.listen(3000, (req, res) => {
+app.listen(process.env.PORT, (req, res) => {
   console.log('Servidor iniciado');
 });
