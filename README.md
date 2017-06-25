@@ -1,4 +1,4 @@
-# cs desafio node
+# Cs Desafio Node
 
 O objetivo do desafio era criar um webservice com as opções de: 
 - cadastro do usuário (signup)
