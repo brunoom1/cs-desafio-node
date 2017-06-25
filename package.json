@@ -22,7 +22,8 @@
   "scripts": {
     "buildDb": "node ./buildDb.js",
     "test": "export ENV=test && npm run buildDb && ./node_modules/mocha/bin/mocha",
-    "dev": "npm run buildDb && node server.js"
+    "dev": "npm run buildDb && node server.js",
+    "start": "npm run buildDb && node server.js"
   },
   "author": "",
   "license": "ISC"
