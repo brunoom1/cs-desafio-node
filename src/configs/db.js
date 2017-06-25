@@ -1,3 +1,7 @@
+var path = require("path");
+
+var root_dir = path.dirname(__filename) + "/../..";
+
 var config = {
   dev: {
     database: '',
@@ -15,7 +19,7 @@ var config = {
       },
 
       // SQLite only
-      storage: './db/database.sqlite'
+      storage: root_dir + '/db/database.sqlite'
     }
   },
   test: {
@@ -34,7 +38,7 @@ var config = {
       },
 
       // SQLite only
-      storage: './db/database-test.sqlite'
+      storage: root_dir + '/db/database-test.sqlite'
     }    
   }
 };
