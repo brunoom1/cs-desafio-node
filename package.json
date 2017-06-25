@@ -21,8 +21,8 @@
   },
   "scripts": {
     "buildDb": "node ./buildDb.js",
-    "test": "export ENV=test && npm run buildDb && ./node_modules/mocha/bin/mocha",
-    "dev": "npm run buildDb && node server.js",
+    "test": "export ENV=test && export PORT=3000 && npm run buildDb && ./node_modules/mocha/bin/mocha",
+    "dev": "npm run buildDb && export PORT=3000 && node server.js",
     "start": "mkdir db && npm run buildDb && node server.js"
   },
   "author": "",
