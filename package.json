@@ -1,0 +1,29 @@
+{
+  "name": "desafio-concrete",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "jsonwebtoken": "^7.4.1",
+    "sequelize": "^4.2.0",
+    "sha1": "^1.1.1",
+    "sqlite3": "^3.1.8"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.4",
+    "jshint": "^2.9.5",
+    "mocha": "^3.4.2",
+    "mockery": "^2.0.0",
+    "sinon": "^2.3.5"
+  },
+  "scripts": {
+    "buildDb": "node ./buildDb.js",
+    "test": "export ENV=test && npm run buildDb && ./node_modules/mocha/bin/mocha",
+    "dev": "npm run buildDb && node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
